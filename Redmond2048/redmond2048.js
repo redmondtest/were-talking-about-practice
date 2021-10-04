@@ -39,7 +39,7 @@ function GenerateNumber(min, max) {
 //// probability of a 4 is .... for now let's say 1/10 - it doesn't seem like it happens very often.
 //// I couldn't find any source telling how often. (and didn't try to read the actual game's source code)
 function generateNewTileValue() {
-    var rand = GenerateNumber(1, 10);
+    var rand = GenerateNumber(1, 20); // was 1-10
     // one of the ten possible values
     if (rand == 1) {
         return 4;
