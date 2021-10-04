@@ -38,8 +38,8 @@ function GenerateNumber(min, max) {
 
 //// probability of a 4 is .... for now let's say 1/10 - it doesn't seem like it happens very often.
 //// I couldn't find any source telling how often. (and didn't try to read the actual game's source code)
-function generateNewTileValue() {
-    var rand = GenerateNumber(1, 8); // was 1-10
+function generateNewTileValue() {  
+    var rand = GenerateNumber(1, 20); // was 1-10 
     // one of the ten possible values
     if (rand == 1) {
         return 4;
@@ -705,7 +705,7 @@ function clearBoard() {
         ///     If 'e' is not defined, 'window.event' will be the result of the '||' expression. 
         // So it's basically shorthand for:  e = e ? e : window.event; 
         // Or: if (typeof(e) === "undefined") { e = window.event; }  
-        // –  Michael Calvin Dec 17 '13 at 20:35 
+        // Â–  Michael Calvin Dec 17 '13 at 20:35 
         //       on stackoverflow.com - a good site for programming questions
         e = e || event
         var somethingMoved = false;
